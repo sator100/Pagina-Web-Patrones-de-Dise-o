@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+}
+
+.header {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pattern-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.pattern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.pattern-card.creational {
+  border-top: 4px solid #3b82f6;
+}
+
+.pattern-card.structural {
+  border-top: 4px solid #10b981;
+}
+
+.pattern-card.behavioral {
+  border-top: 4px solid #f59e0b;
+}
+
+.pattern-header.creational {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.pattern-header.structural {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.pattern-header.behavioral {
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.badge.creational {
+  background-color: #3b82f6;
+}
+
+.badge.structural {
+  background-color: #10b981;
+}
+
+.badge.behavioral {
+  background-color: #f59e0b;
+}
+
+.exercise-item {
+  border-left: 2px solid #e5e7eb;
+  transition: border-color 0.2s ease;
+}
+
+.exercise-item:hover {
+  border-left-color: #9ca3af;
+}
+
+.download-btn {
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+}
+
+.search-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.filter-btn.active {
+  font-weight: 600;
+  color: white;
+}
+
+.filter-btn {
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pattern-card {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.pattern-card:nth-child(1) { animation-delay: 0.1s; }
+.pattern-card:nth-child(2) { animation-delay: 0.15s; }
+.pattern-card:nth-child(3) { animation-delay: 0.2s; }
+.pattern-card:nth-child(4) { animation-delay: 0.25s; }
+.pattern-card:nth-child(5) { animation-delay: 0.3s; }
+.pattern-card:nth-child(6) { animation-delay: 0.35s; }
+.pattern-card:nth-child(7) { animation-delay: 0.4s; }
+.pattern-card:nth-child(8) { animation-delay: 0.45s; }
+
+#no-results {
+  display: none;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.25rem;
+  color: #6b7280;
+}
