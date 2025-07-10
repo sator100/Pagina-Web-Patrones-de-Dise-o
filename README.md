@@ -1,1 +1,1 @@
-# Pagina-Web-Patrones-de-Dise-o
+# Pagina Web Patrones de Diseño - Modelos de programacion
